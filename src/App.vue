@@ -28,7 +28,13 @@ export default {
       correctAnswers: undefined
     }
   },
-
+  computed: {
+   answers() {
+    var answers = this.incorrectAnswers;
+    answers.push(this.correctAnswers);
+    return answers;
+   }
+  },
   created() {
     this.axios
       .get('https://opentdb.com/api.php?amount=1&category=11&difficulty=medium&type=multiple')
