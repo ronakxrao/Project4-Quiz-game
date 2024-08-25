@@ -24,6 +24,8 @@ export default {
  
   
 }
+
+//https://opentdb.com/api.php?amount=1&category=11&difficulty=medium&type=multiple
 </script>
 
 <style lang="scss">
