@@ -5,7 +5,14 @@
     Microphones can be used not omly to pick up sound, but also to project sound similar to a speaker.
   </h1>
 
-  
+  <input type="radio" name="options" value="True">
+    <label>True</label><br>
+
+    <input type="radio" name="options" value="False">
+    <label>False</label><br>
+    
+    <button class="send" type="button">Send</button>
+
   </div>
 </template>
 
