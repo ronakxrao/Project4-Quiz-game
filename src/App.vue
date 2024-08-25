@@ -35,5 +35,9 @@ export default {
   color: #2c3e50;
   margin: 60px auto;
   max-width: 960px;
+
+  input[type=radio] {
+    margin: 12px 4px;
+  }
 }
 </style>
