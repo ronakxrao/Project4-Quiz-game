@@ -30,7 +30,7 @@ export default {
   },
   computed: {
    answers() {
-    var answers = this.incorrectAnswers;
+    var answers = JSON.parse(JSON.stringify(this.incorrectAnswers));
     answers.push(this.correctAnswers);
     return answers;
    }
