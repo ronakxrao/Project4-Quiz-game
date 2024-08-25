@@ -1,11 +1,11 @@
 <template>
 
   <div>
-  <h1> 
-    Microphones can be used not omly to pick up sound, but also to project sound similar to a speaker.
-  </h1>
+    <h1>
+      Microphones can be used not omly to pick up sound, but also to project sound similar to a speaker.
+    </h1>
 
-  <input type="radio" name="options" value="True">
+    <input type="radio" name="options" value="True">
     <label>True</label><br>
 
     <input type="radio" name="options" value="False">
@@ -21,16 +21,26 @@
 
 export default {
   name: 'App',
- 
+
+  data() {
+    return {
+      question: undefined,
+      incorrectAnswers: undefined,
+      correctAnswers: undefined
+    }
+  },
 
   created() {
     this.axios
-    .get('https://opentdb.com/api.php?amount=1&category=11&difficulty=medium&type=multiple')
-    .then((response) => {
-      console.log(response.data)
-    })
+      .get('https://opentdb.com/api.php?amount=1&category=11&difficulty=medium&type=multiple')
+      .then((response) => {
+        this.question = response.data.results[0].question;
+        this.incorrectAnswers = response.data.results[0].incorrect_answers;
+        this.correctAnswers = response.data.results[0].correct_answer;
+
+      })
   }
-  
+
 }
 
 //https://opentdb.com/api.php?amount=1&category=11&difficulty=medium&type=multiple
