@@ -1,8 +1,7 @@
 <template>
 
   <div>
-    <h1>
-     {{ this.question  }}
+    <h1 v-html="this.question">
     </h1>
 
     <input type="radio" name="options" value="True">
