@@ -1,16 +1,21 @@
 <template>
 
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+  <h1> 
+    Microphones can be used not omly to pick up sound, but also to project sound similar to a speaker.
+  </h1>
+
+  
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+ 
+  
 }
 </script>
 
