@@ -10,7 +10,7 @@
 
     <input type="radio" name="options" value="False">
     <label>False</label><br>
-    
+
     <button class="send" type="button">Send</button>
 
   </div>
@@ -34,5 +34,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  max-width: 960px;
 }
 </style>
