@@ -22,6 +22,14 @@
 export default {
   name: 'App',
  
+
+  created() {
+    this.axios
+    .get('https://opentdb.com/api.php?amount=1&category=11&difficulty=medium&type=multiple')
+    .then((response) => {
+      console.log(response.data)
+    })
+  }
   
 }
 
