@@ -31,7 +31,7 @@ export default {
   computed: {
    answers() {
     var answers = JSON.parse(JSON.stringify(this.incorrectAnswers));
-    answers.splice(Math.random(), 0, this.correctAnswers);
+    answers.splice(Math.round(Math.random() * answers.length), 0, this.correctAnswers);
     return answers;
    }
   },
