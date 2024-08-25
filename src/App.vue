@@ -2,7 +2,7 @@
 
   <div>
     <h1>
-      Microphones can be used not omly to pick up sound, but also to project sound similar to a speaker.
+     {{ this.question  }}
     </h1>
 
     <input type="radio" name="options" value="True">
