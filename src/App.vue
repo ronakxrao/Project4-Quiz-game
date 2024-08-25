@@ -39,5 +39,16 @@ export default {
   input[type=radio] {
     margin: 12px 4px;
   }
+
+  button.send {
+    margin-top: 12px;
+    height: 40px;
+    min-width: 120px;
+    padding: 0 16px;
+    color: #fff;
+    background-color: #1867c0;
+    border: #1867c0;
+    cursor: pointer;
+  }
 }
 </style>
